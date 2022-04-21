@@ -20207,6 +20207,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3588526102967911057, guid: 000ce968f6285f9489ec7aafc40a00fc, type: 3}
+      propertyPath: fltRunSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4547323530053103751, guid: 000ce968f6285f9489ec7aafc40a00fc, type: 3}
       propertyPath: m_Enabled
       value: 1
