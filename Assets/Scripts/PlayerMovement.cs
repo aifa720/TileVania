@@ -71,12 +71,16 @@ public class PlayerMovement : MonoBehaviour
         if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
         {
             myRigidbody.gravityScale = fltGravityScaleAtStart;
+            myAnimator.SetBool("isClimbing", false);
             return;
         }
 
         Vector2 climbVelocity = new Vector2 (myRigidbody.velocity.x, moveInput.y * fltClimbSpeed);
         myRigidbody.velocity = climbVelocity;
         myRigidbody.gravityScale = 0f;
+
+        bool bolPlayerHasVerticallSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
+        myAnimator.SetBool("isClimbing", bolPlayerHasVerticallSpeed);
     }
 
 }
