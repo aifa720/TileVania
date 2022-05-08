@@ -107,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
             bolIsAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 
