@@ -532,7 +532,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.42, y: 1}
+    m_SensorSize: {x: 2.4444447, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -24394,6 +24394,63 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1303693760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 311772827021808633, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_Name
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5813775
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953783471555259772, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b5cbaff0e6186294ead894f47ac7de16, type: 3}
 --- !u!1 &1495508707
 GameObject:
   m_ObjectHideFlags: 0
@@ -24474,7 +24531,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.42, y: 1}
+    m_SensorSize: {x: 2.4444447, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -24781,7 +24838,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.42, y: 1}
+    m_SensorSize: {x: 2.4444447, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -24838,7 +24895,7 @@ Transform:
   - {fileID: 408424386}
   - {fileID: 1256801982}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132912794
 GameObject:
@@ -24901,7 +24958,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2095876689
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -1798928722, guid: b43d8403d6a8a7948bade8777389d32f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24927,7 +24984,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2132912800
 BoxCollider2D:
