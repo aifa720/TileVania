@@ -549,7 +549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212539231}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.579018, y: -1.3851745, z: -9.852517}
+  m_LocalPosition: {x: -2.8490186, y: -3.5651746, z: -9.852517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -868,7 +868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.873539, y: 2.663463, z: -10}
+  m_LocalPosition: {x: -7.84, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24095,7 +24095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495508707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.579018, y: -1.3851745, z: -9.852517}
+  m_LocalPosition: {x: -2.8490186, y: -3.5651746, z: -9.852517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24402,7 +24402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104544163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.579018, y: -1.3851745, z: -9.852517}
+  m_LocalPosition: {x: -2.8490186, y: -3.5651746, z: -9.852517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24527,7 +24527,9 @@ GameObject:
   - component: {fileID: 2132912797}
   - component: {fileID: 2132912796}
   - component: {fileID: 2132912795}
-  m_Layer: 0
+  - component: {fileID: 2132912800}
+  - component: {fileID: 2132912801}
+  m_Layer: 11
   m_Name: Goober (Enemy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24651,13 +24653,52 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132912794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.48, y: 2.45, z: 0}
+  m_LocalPosition: {x: -9.46, y: 0.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132912800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132912794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71ef019d2c1ab74588b2fd534c86224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fltMoveSpeed: 1
+--- !u!61 &2132912801
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132912794}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.33066368, y: -0.22044253}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0.0625, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.078149796, y: 0.55911493}
+  m_EdgeRadius: 0
 --- !u!1001 &1664725867071971035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24675,11 +24716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1664725867007842413, guid: 000ce968f6285f9489ec7aafc40a00fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.57
+      value: -7.84
       objectReference: {fileID: 0}
     - target: {fileID: 1664725867007842413, guid: 000ce968f6285f9489ec7aafc40a00fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.68
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1664725867007842413, guid: 000ce968f6285f9489ec7aafc40a00fc, type: 3}
       propertyPath: m_LocalPosition.z
