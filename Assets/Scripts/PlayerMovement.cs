@@ -9,13 +9,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float fltJumpSpeed = 5f;
     [SerializeField] float fltClimbSpeed = 5f;
 
-
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
     float fltGravityScaleAtStart;
+
+    bool bolIsAlive = true;
 
     void Start()
     {
@@ -28,18 +29,22 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!bolIsAlive) { return; }
         Run();
         FlipSprite();
         ClimbLadder();
+        Die();
     }
 
     void OnMove(InputValue value)
     {
+        if (!bolIsAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value)
     {
+        if (!bolIsAlive) { return; }
         if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
         if (value.isPressed)
         {
@@ -83,6 +88,15 @@ public class PlayerMovement : MonoBehaviour
 
         bool bolPlayerHasVerticallSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
         myAnimator.SetBool("isClimbing", bolPlayerHasVerticallSpeed);
+    }
+
+
+    void Die()
+    {
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        {
+            bolIsAlive = false;
+        }
     }
 
 }
